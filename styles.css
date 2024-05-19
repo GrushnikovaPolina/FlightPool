@@ -1,0 +1,330 @@
+body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffffff;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://celes.club/uploads/posts/2022-11/1667332062_6-celes-club-p-oboi-samolet-v-nebe-krasivo-6.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+  
+    .bronirovanie{
+        font-weight: bold;
+      text-transform: uppercase;
+        font-family: sans-serif;
+        padding-top: 8px;
+        padding-bottom: 3px;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+    }
+    
+
+    .principles {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .principles .princip {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .principles .princip i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .principles .princip .princip-heading {
+      font-size: 50px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .principles .princip .princip-text {
+        text-align: center;
+        font-family: sans-serif;
+      font-size: 20px;
+      color: #000000;
+      margin: 10px 0;
+    }
+
+    .ecipag{
+        font-weight: bold;
+      text-transform: uppercase;
+        font-family: sans-serif;
+        padding-top: 8px;
+        padding-bottom: 3px;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+    }
+    .slider-container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+  .poisk{
+    font-weight: bold;
+      text-transform: uppercase;
+        font-family: sans-serif;
+        padding-top: 8px;
+        padding-bottom: 3px;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+  }
+
+  .search-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #121213;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Akzii{
+  display: flex;
+  flex-direction: column;
+}
+ .block-akz{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  border-top: 1px solid rgb(156, 156, 156);
+  border-bottom: 1px solid rgb(156, 156, 156);
+  
+}
+ .akzia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .tekst-1{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+ .tekst-2 h2{
+  margin-left: 30px;
+  font-size: 40px;
+  color: #3f3f3f;
+  margin: 10px 0;
+}
+ .tekst-2{
+  margin-right: 30px;
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+.img-akz{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+  
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0f0f0f;
+      padding: 40px 80px;
+    }
+.footer h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+      font-family: sans-serif;
+      padding-top: 8px;
+      padding-bottom: 3px;
+      font-size: 20px;
+      line-height: 1.23;
+      text-align: center;
+      color: #fff;
+}
+    .footer p{
+        text-align: center;
+color:#fff;
+    }
+    .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+  
+  .otzivi{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: center;
+  }
+  .trust-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.user-review {
+    font-style: italic;
+}
+  
+.email-rasulka{width: 30%;
+    margin: 0 auto;;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+  }

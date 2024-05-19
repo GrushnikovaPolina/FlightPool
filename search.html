@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с результатами поиска</title>
+    <style>
+       button { 
+        padding: 10px 20px; 
+        background-color:#ffffff; 
+        color: #000000; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        font-size: 1.2em;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    } 
+    button:hover { 
+        background-color: #b91313; 
+
+    } 
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffffff;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+.zagalovok{
+    font-weight: bold;
+    text-transform: uppercase;
+      font-family: sans-serif;
+      padding-top: 8px;
+      padding-bottom: 3px;
+      font-size: 30px;
+      line-height: 1.23;
+      text-align: center;
+}
+.bronirovanie {
+    text-align: center;
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.user-review {
+    font-style: italic;
+}
+.footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0f0f0f;
+      padding: 40px 80px;
+    }
+.footer h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+      font-family: sans-serif;
+      padding-top: 8px;
+      padding-bottom: 3px;
+      font-size: 20px;
+      line-height: 1.23;
+      text-align: center;
+      color: #fff;
+}
+    .footer p{
+        text-align: center;
+color:#fff;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" style="float:left; margin-left: 20px; margin-right: 20px; margin-top: -11px; margin-bottom: -40px; "><img src="https://static.tildacdn.com/tild3866-3461-4632-a630-356139613438/logo.png" width="170" height="auto"></a>
+        <a href="#" class="logo">FlightPool</a>
+        <nav class="nav-items">
+          <a href="#">Акции</a>
+          <a href="#">Поиск</a>
+          <a href="#">Личный кабинет</a>
+        </nav>
+      </header>
+      <section class="search">
+        <div class="zagalovok">Страница бронирования!</div> 
+         <div class="reviews">
+             <div class="review">
+                 
+                 <h3 class="user-name">Москва-Рязань</h3>
+                 <p class="user-review">Номер рейса: A90926</p>
+
+                 <p class="user-review">Воздушное судно:A320-Northwest</p>
+                    
+                    <p class="user-review"> Дата вылета: 15.03.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 10.00</p>
+                    
+                            <p class="user-review">Время прилета:11.30</p>
+                    
+                                <p class="user-review">Время в пути: 1ч 30м</p>
+                    
+                                    <p class="user-review"> Стоимость: 2 000</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+       
+             <div class="review">
+                <h3 class="user-name">Рязань-Москва</h3>
+                 <p class="user-review">Номер рейса: A50626</p>
+
+                 <p class="user-review">Воздушное судно: A320-Northwest</p>
+                    
+                    <p class="user-review"> Дата вылета: 18.03.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 10.00</p>
+                    
+                            <p class="user-review">Время прилета: 11.30</p>
+                    
+                                <p class="user-review">Время в пути: 1ч 30м</p>
+                    
+                                    <p class="user-review"> Стоимость: 2 000</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+       
+             <div class="review">
+                <h3 class="user-name">Москва-Даламан</h3>
+                 <p class="user-review">Номер рейса: A57629</p>
+
+                 <p class="user-review">Воздушное судно:B738-US Airways</p>
+                    
+                    <p class="user-review"> Дата вылета: 26.05.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 15.05 </p>
+                    
+                            <p class="user-review">Время прилета: 21.20</p>
+                    
+                                <p class="user-review">Время в пути:  1д 8ч </p>
+                    
+                                    <p class="user-review"> Стоимость: 26 000</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+
+             <div class="review">
+                <h3 class="user-name">Даламан-Москва</h3>
+                 <p class="user-review">Номер рейса: A53429</p>
+
+                 <p class="user-review">Воздушное судно:B738-US Airways</p>
+                    
+                    <p class="user-review"> Дата вылета: 03.06.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 15.05 </p>
+                    
+                            <p class="user-review">Время прилета: 21.20</p>
+                    
+                                <p class="user-review">Время в пути:  1д 8ч </p>
+                    
+                                    <p class="user-review"> Стоимость: 30 000</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+
+
+             <div class="review">
+                <h3 class="user-name">Москва-Турция</h3>
+                 <p class="user-review">Номер рейса: A83629</p>
+
+                 <p class="user-review">Воздушное судно:B738-US Airways</p>
+                    
+                    <p class="user-review"> Дата вылета: 16.07.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 15.05 </p>
+                    
+                            <p class="user-review">Время прилета: 00.10</p>
+                    
+                                <p class="user-review">Время в пути:  1д 10ч </p>
+                    
+                                    <p class="user-review"> Стоимость: 26 003</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+       
+             
+             <div class="review">
+                <h3 class="user-name">Турция-Москва</h3>
+                 <p class="user-review">Номер рейса: A83579</p>
+
+                 <p class="user-review">Воздушное судно:B738-US Airways</p>
+                    
+                    <p class="user-review"> Дата вылета: 28.07.2024</p>
+                    
+                        <p class="user-review"> Время вылета: 15.05 </p>
+                    
+                            <p class="user-review">Время прилета: 00.10</p>
+                    
+                                <p class="user-review">Время в пути:  1д 10ч </p>
+                    
+                                    <p class="user-review"> Стоимость: 23 003</p>
+                                    <div> <button type="submit">Забронировать</button> </div>
+             </div>
+         </div>
+       </section>
+       <footer class="footer">
+        <h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+        
+          <p>Телефон 8 (800) 100-10-10 </p>
+          
+            <p>Грушникова Полина Максимовна</p>     
+      </footer>
+      <script>
+        // JavaScript для перенаправления при нажатии кнопки "Забронировать"
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = 'register.html';
+            });
+        });
+    </script>
+</body>
+</html>
